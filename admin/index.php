@@ -3,7 +3,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
- <?php include 'navigation.php'; ?>
+ <?php include 'includes/navigation.php'; ?>
 
         <div id="page-wrapper">
 
