@@ -39,8 +39,6 @@
         $update_user_query = mysqli_query($connection, $query);  
           
         confirm($update_user_query); 
-
-
     }
 ?>
 

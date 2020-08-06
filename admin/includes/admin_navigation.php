@@ -26,7 +26,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="../includes/logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -71,7 +71,7 @@
                         </ul>
                     </li>
                     <li>
-                    <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Profile </a>
+                    <a href="profile.php"><i class="fa fa-fw fa-wrench"></i> Profile </a>
                     </li>
                 </ul>
             </div>
