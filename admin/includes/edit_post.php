@@ -87,9 +87,25 @@ while($row = mysqli_fetch_assoc($select_posts_by_id)){
     </div>
 
     <div class="form-group">
-        <label for="title">Post Status</label>
-        <input value="<?php echo $post_status ?>" type="text" class="form-control" name="post_status">
+    <select name="post_status" id="">
+    <option value="<?php echo $post_status ?>"><?php echo $post_status ?></option>
+    <?php
+
+    if($post_status == 'published'){
+        echo "<option value= 'draft' >draft</option>";
+    }
+    if($post_status == 'draft'){
+        echo "<option value='published'>published</option>";
+    }
+
+
+    ?>
+    
+    </select>
+    
     </div>
+
+
 
     <div class="form-group">
     <img width=200 height=200 src="../images/<?php echo $post_image; ?>" alt="">
