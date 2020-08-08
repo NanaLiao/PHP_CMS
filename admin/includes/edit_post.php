@@ -44,12 +44,11 @@ while($row = mysqli_fetch_assoc($select_posts_by_id)){
     $query .="post_image  = '{$post_image}' ";
     $query .= "WHERE post_id = {$the_post_id}; ";
 
-
-
-  
   $update_post = mysqli_query($connection,$query);
   
   confirm($update_post);
+
+  echo "<p class='bg-success'> Post Updated. <a href='../post.php?p_id=$the_post_id'>View Post</a></p>" ;
 
 }
 
@@ -120,7 +119,7 @@ while($row = mysqli_fetch_assoc($select_posts_by_id)){
 
     <div class="form-group">
         <label for="post_content">Post Content</label>
-        <textarea class="form-control" name="post_content" id="" cols="30" rows="10">
+        <textarea class="form-control" name="post_content" id="body" cols="30" rows="10">
         <?php echo $post_content ?> 
         </textarea>
     </div>
